@@ -38,7 +38,7 @@ static int __init hello_init(void)
 
 	for (i = 0; i < hello; i++) {
 		struct event_data *md = kmalloc(sizeof(*md), GFP_KERNEL);
-		if (i == 4){
+		if (i == 6){
 			md = 0;
 		}
 		md->timestamp = ktime_get();
